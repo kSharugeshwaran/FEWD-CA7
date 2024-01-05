@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 const Footer = forwardRef((props, ref) => {
     
   return (
-    <div ref={ref} style={{ height: "300px", backgroundColor: "black", color: "white", paddingBottom: "20px" }}>
+    <div ref={ref} style={{ height: "300px", backgroundColor: "black", color: "white", paddingBottom: "20px" }} className='footerContainer'>
       <footer>
         <div className="footer-content" style={{ display: "grid", gridTemplateColumns: "repeat(3 ,1fr)", margin: "3vw", justifyItems: "center", paddingTop: "30px" }}>
           <div className="footer-section about">

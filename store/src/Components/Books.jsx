@@ -35,7 +35,7 @@ const Books = () => {
         <img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="" style={{ width: "30px", height: "30px", position: "relative", right: "15%", top: "1.5vh" }} />
       </div>
 
-      {filteredData.length === 0 ? (
+      {filteredData.length === 0 ? (<div style={{padding: "20vh 0"}}>
         <Hourglass
           visible={true}
           height={80}
@@ -43,8 +43,10 @@ const Books = () => {
           ariaLabel="hourglass-loading"
           wrapperStyle={{ marginTop: "6vh" }}
           wrapperClass=""
-          colors={['#306cce', '#72a1ed']}
+          colors={['white', '#72a1ed']}
         />
+      </div>
+        
       ) : (
         <div className="contentDisplay" style={{ display: "grid", gridTemplateColumns: "repeat(3,0.3fr)", columnGap: "150px", justifyItems: "center", rowGap: "100px", marginTop: "6vh" }}>
           {filteredData.map((e, i) => (
