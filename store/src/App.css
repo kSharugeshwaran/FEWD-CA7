@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rambla', sans-serif;
+}
+
+body{
+  /* background-color: rgb(221,208,200); */
+  background: linear-gradient(to right, #ff0000, #ff69b4)
+}
+input{
+  padding: 17px;
+  width: 100%;
+  margin: 20px;
+  border: 3px solid rgb(255, 0, 0);
+  border-radius: 10px;
+}
+.inputContainer input:focus{
+  box-shadow: -5px 7px 2px 0px rgb(248, 79, 107); 
+  outline: none;
+}
+input::placeholder{
+  color:  #ff69b4;
+}
+.inputContainer{
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-top: 3vh;
+}
+fieldset button{
+  width: 50%;
+  height: 50px;
+  margin: 40px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+}
+
+fieldset button:hover{
+  transform: scale3d(1.1,1.1,1.1);
+}
+
+fieldset{
+  background-color: white;
+  border-radius: 20px;
+  font-family: 'Kalam', cursive;
+}
+legend{
+  color: white;
+  background-color: black;
+}
+nav{
+  background-color: white;
+}
+nav p{
+  font-size: 20px;
+}
+.search input{
+  
+}
+.search input:focus{
+  box-shadow: -5px 7px 2px 0px rgb(59, 33, 37); 
+  outline: none;
+}
+.display{
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.display:hover{
+  background-color: white;
+  transform: scale3d(1.1,1.1,1.1);
+  box-shadow: -3px -10px 12px 3px rgba(0, 0, 0, 0.37);
+}
+.bookImage{
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading{
+  0%{
+    background-color: rgb(169, 168, 168);
+  }
+  100%{
+    background-color: white;
+  }
+}
+.heading{
+  font-family: 'Cookie', cursive;
+}
+/* Add this to your CSS file or use it in a styled-components setup */
+
+/* Toast Container Styles */
+ .Toastify__toast-container {
+  position: fixed;
+  z-index: 9999;
+  top: 16px;
+  right: 16px;
+  height: 100px;
+  width: 300px;
+} 
+a{
+  text-decoration: none;
+  color: white;
+}
+footer{
+  margin-bottom: none;
+}
+@media only screen and (max-width: 500px){
+  .contentDisplay{
+    grid-template-columns: repeat(1,1fr);
+    }
+}
