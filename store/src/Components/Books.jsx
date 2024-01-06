@@ -27,10 +27,11 @@ const Books = () => {
       <div className='search' style={{ display: "flex", flexDirection: "row", justifyContent: "center", marginTop: "10vh" }}>
         <input
           type="text"
-          style={{ width: "15vw", margin: "0", marginBottom: "5vh" }}
+            
           placeholder='Search Books...'
           value={searchTerm}
           onChange={handleInputChange}
+          id='search'
         />
         <img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" alt="" style={{ width: "30px", height: "30px", position: "relative", right: "15%", top: "1.5vh" }} />
       </div>
@@ -48,7 +49,7 @@ const Books = () => {
       </div>
         
       ) : (
-        <div className="contentDisplay" style={{ display: "grid", gridTemplateColumns: "repeat(3,0.3fr)", columnGap: "150px", justifyItems: "center", rowGap: "100px", marginTop: "6vh" }}>
+        <div className="contentDisplay">
           {filteredData.map((e, i) => (
             <div className='display' key={i} style={{ padding: "50px" }}>
               <img
