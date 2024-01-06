@@ -96,7 +96,7 @@ const Register = () => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',marginBottom: "5vh" }}>
-      <fieldset style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '40%',marginBottom: "0vh",marginTop: "5vh"}}>
+      <fieldset>
         <div className='inputContainer' style={{ display: 'flex', flexDirection: 'column' }}>
           <h2>R E G I S T E R</h2>
           <input
